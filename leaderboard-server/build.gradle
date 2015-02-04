@@ -9,15 +9,15 @@ dependencies {
 // package server module into fatJar, as recommended for dropwizard services:
 buildscript {
     repositories {
-        mavenCentral()
+        jcenter()
     }
 
     dependencies {
-        classpath 'eu.appsatori:gradle-fatjar-plugin:0.2-rc1'
+        classpath "eu.appsatori:gradle-fatjar-plugin:0.3"
     }
 }
 
-apply plugin: 'fatjar'
+apply plugin: 'eu.appsatori.fatjar'
 
 fatJar {
     exclude "META-INF/*.SF"

@@ -15,6 +15,10 @@ allprojects {
 }
 
 subprojects { project ->
+    repositories {
+        mavenCentral()
+    }
+
     dependencies {
         compile 'com.google.guava:guava:14.0.1'
         compile 'joda-time:joda-time:2.2'
@@ -29,7 +33,7 @@ subprojects { project ->
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '1.6'
+    gradleVersion = '2.1'
 }
 
 idea {
