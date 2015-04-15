@@ -13,7 +13,7 @@ Build
 =====
 Some of the tests require a github user to activate the API, so you'll need to supply credentials:
 ```
-./gradlew clean build -Dusername=<a github user> -Dpassword=<her password>
+./gradlew clean build -Dusername=<a github user> -Dpassword='<her password>'
 ```
 
 Alternatively, you can build without tests:
