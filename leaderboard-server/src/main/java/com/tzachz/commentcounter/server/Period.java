@@ -8,7 +8,7 @@ package com.tzachz.commentcounter.server;
  */
 public enum Period {
 
-    today(0), week(6), month(30);
+    today(0), past24hours(1), week(6), month(30);
 
     private final int daysBack;
 
